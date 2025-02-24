@@ -1,10 +1,10 @@
 const Menu = () => {
   return (
-    <ul className="flex justify-end space-x-8 py-4">
+    <ul className="flex justify-end space-x-4 py-4">
       <li>
         <a
           href="#"
-          className="block rounded-lg  py-2 font-medium hover:bg-gray-100 hover:text-gray-700"
+          className="block rounded-lg p-2 font-medium hover:bg-gray-100 hover:text-gray-700"
         >
           Skills
         </a>
@@ -13,7 +13,7 @@ const Menu = () => {
       <li>
         <a
           href="#"
-          className="block rounded-lg py-2  font-medium hover:bg-gray-100 hover:text-gray-700"
+          className="block rounded-lg p-2 font-medium hover:bg-gray-100 hover:text-gray-700"
         >
           Portfolio
         </a>
@@ -22,7 +22,7 @@ const Menu = () => {
       <li>
         <a
           href="#"
-          className="block rounded-lg py-2  font-medium hover:bg-gray-100 hover:text-gray-700"
+          className="block rounded-lg p-2 font-medium hover:bg-gray-100 hover:text-gray-700"
         >
           Experience
         </a>
@@ -31,7 +31,7 @@ const Menu = () => {
       <li>
         <a
           href="#"
-          className="block rounded-lg  py-2  font-medium hover:bg-gray-100 hover:text-gray-700"
+          className="block rounded-lg p-2 font-medium hover:bg-gray-100 hover:text-gray-700"
         >
           Contact
         </a>
