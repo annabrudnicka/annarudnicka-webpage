@@ -1,4 +1,4 @@
-import EmailForm from "./EmailForm";
+import EmailForm from "../EmailForm";
 
 const ContactSection = () => {
   return (

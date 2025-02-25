@@ -1,9 +1,9 @@
 import Image from "next/image";
-import HomeSection from "./components/HomeSection";
-import SkillsSection from "./components/SkillsSection";
-import PortfolioSection from "./components/PortfolioSection";
-import ExperienceSection from "./components/ExperienceSection";
-import ContactSection from "./components/ContactSection";
+import SkillsSection from "./components/Sections/SkillsSection";
+import PortfolioSection from "./components/Sections/PortfolioSection";
+import ExperienceSection from "./components/Sections/ExperienceSection";
+import ContactSection from "./components/Sections/ContactSection";
+import HomeSection from "./components/Sections/HomeSection";
 
 export default function Home() {
   return (

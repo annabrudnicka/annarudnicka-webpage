@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Menu from "./Menu";
+import Menu from "../Menu";
 
 const HomeSection = () => {
   return (
