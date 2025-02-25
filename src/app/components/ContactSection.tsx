@@ -1,3 +1,5 @@
+import EmailForm from "./EmailForm";
+
 const ContactSection = () => {
   return (
     <section className="h-fit w-screen px-4 py-12">
@@ -23,54 +25,7 @@ const ContactSection = () => {
         </div>
 
         <div className="rounded-lg bg-gradient-to-b from-orange-50 to-gray-200 p-8 shadow-lg w-1/3">
-          <form action="#" className="space-y-4">
-            <div>
-              <label className="sr-only" htmlFor="title">
-                Title
-              </label>
-              <input
-                className="w-full rounded-lg p-3 text-sm"
-                placeholder="Title"
-                type="text"
-                id="title"
-              />
-            </div>
-
-            <div>
-              <div>
-                <label className="sr-only" htmlFor="email">
-                  Email
-                </label>
-                <input
-                  className="w-full rounded-lg p-3 text-sm"
-                  placeholder="E-mail"
-                  type="email"
-                  id="email"
-                />
-              </div>
-            </div>
-
-            <div>
-              <label className="sr-only" htmlFor="message">
-                Message
-              </label>
-
-              <textarea
-                className="w-full min-h-52 rounded-lg p-3 text-sm"
-                placeholder="Message"
-                id="message"
-              ></textarea>
-            </div>
-
-            <div className="flex justify-center">
-              <button
-                type="submit"
-                className="inline-block w-full rounded-lg bg-neutral-700 px-5 py-3 font-medium text-white sm:w-auto"
-              >
-                Send
-              </button>
-            </div>
-          </form>
+          <EmailForm />
         </div>
       </div>
     </section>
