@@ -36,7 +36,7 @@ const ContactSection = () => {
 
           <span className="flex items-center gap-5 pb-5">
             <Image
-              src="/linkedin.png"
+              src="/linkedinColor.png"
               alt="linkedin icon"
               width={40}
               height={40}
@@ -47,19 +47,34 @@ const ContactSection = () => {
           </span>
 
           <span className="flex items-center gap-5 pb-5">
-            <Image src="/github.png" alt="github icon" width={40} height={40} />
-            <Link href={"https://github.com/annaabramowicz"}>
+            <Image
+              src="/githubColor.png"
+              alt="github icon"
+              width={40}
+              height={40}
+            />
+            <Link href={"https://www.github.com/annaabramowicz"}>
               github/annaabramowicz
             </Link>
           </span>
 
           <span className="flex items-center gap-5 pb-5">
-            <Image src="/mail.png" alt="mail icon" width={40} height={40} />
+            <Image
+              src="/mailColor.png"
+              alt="mail icon"
+              width={40}
+              height={40}
+            />
             anna.b.abramowicz@gmail.com
           </span>
 
           <span className="flex items-center gap-5 pb-5">
-            <Image src="/phone.png" alt="phone icon" width={40} height={40} />
+            <Image
+              src="/phoneColor.png"
+              alt="phone icon"
+              width={40}
+              height={40}
+            />
             +48 530 728 298
           </span>
         </div>
