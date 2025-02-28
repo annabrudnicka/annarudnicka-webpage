@@ -1,4 +1,25 @@
+"use client";
+
+import { useEffect } from "react";
+
 const PortfolioSection = () => {
+  useEffect(() => {
+    const elements = document.querySelectorAll(".scale-in-element");
+
+    const observer = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animate-scale-in");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+    elements.forEach((element) => observer.observe(element));
+  }, []);
+
   return (
     <section className="h-fit w-screen">
       <div className="px-4">
@@ -6,7 +27,7 @@ const PortfolioSection = () => {
           <h1 className="text-4xl">Portfolio</h1>
 
           <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
-            <blockquote className="rounded-lg bg-gray-50 p-6 shadow-xs sm:p-8">
+            <blockquote className="scale-in-element opacity-0 scale-0 rounded-lg bg-gray-50 p-6 shadow-xs sm:p-8">
               <div className="flex items-center gap-4">
                 <img
                   alt=""
@@ -72,7 +93,7 @@ const PortfolioSection = () => {
               </p>
             </blockquote>
 
-            <blockquote className="rounded-lg bg-gray-50 p-6 shadow-xs sm:p-8">
+            <blockquote className="scale-in-element opacity-0 scale-0 rounded-lg bg-gray-50 p-6 shadow-xs sm:p-8">
               <div className="flex items-center gap-4">
                 <img
                   alt=""
@@ -138,7 +159,7 @@ const PortfolioSection = () => {
               </p>
             </blockquote>
 
-            <blockquote className="rounded-lg bg-gray-50 p-6 shadow-xs sm:p-8">
+            <blockquote className="scale-in-element opacity-0 scale-0 rounded-lg bg-gray-50 p-6 shadow-xs sm:p-8">
               <div className="flex items-center gap-4">
                 <img
                   alt=""
