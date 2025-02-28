@@ -2,7 +2,7 @@ import { sendEmail } from "../actions/sendEmail";
 
 export default function EmailForm() {
   return (
-    <div className="scale-in-element opacity-0 scale-0 rounded-lg bg-gradient-bg p-8 shadow-lg w-1/3">
+    <div className="scale-in-element opacity-0 scale-0 rounded-lg bg-gradient-bg p-8 shadow-lg w-1/2">
       <form action={sendEmail} className="space-y-4">
         <div>
           <label className="sr-only" htmlFor="title">

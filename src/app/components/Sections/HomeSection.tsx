@@ -6,7 +6,7 @@ const HomeSection = () => {
     <section className="w-full h-screen">
       <div className="px-4">
         <Header />
-        <div className="flex items-center justify-center w-screen h-[calc(100vh_-_150px)]">
+        <div className="flex items-center justify-between max-w-4xl mx-auto h-[calc(100vh_-_150px)]">
           <div className="animate-left-animation">
             <Image
               src="/programmingGirl.gif"

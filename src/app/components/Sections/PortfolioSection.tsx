@@ -22,8 +22,8 @@ const PortfolioSection = () => {
 
   return (
     <section className="h-fit w-screen">
-      <div className="px-4">
-        <div className="mx-auto max-w-screen-xl px-4 py-12">
+      <div className="max-w-4xl mx-auto">
+        <div className="mx-auto max-w-screen-xl py-12">
           <h1 className="text-4xl">Portfolio</h1>
 
           <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
