@@ -1,40 +1,20 @@
 const Menu = () => {
   return (
-    <ul className="flex justify-end space-x-4 py-4">
-      <li>
-        <a
-          href="#"
-          className="block rounded-lg p-2 font-medium hover:bg-gray-100 hover:text-gray-700"
-        >
-          Skills
-        </a>
+    <ul className="flex justify-end py-4 space-x-9">
+      <li className="hover:text-gray-500">
+        <a href="#">Skills</a>
       </li>
 
-      <li>
-        <a
-          href="#"
-          className="block rounded-lg p-2 font-medium hover:bg-gray-100 hover:text-gray-700"
-        >
-          Portfolio
-        </a>
+      <li className="hover:text-gray-500">
+        <a href="#">Portfolio</a>
       </li>
 
-      <li>
-        <a
-          href="#"
-          className="block rounded-lg p-2 font-medium hover:bg-gray-100 hover:text-gray-700"
-        >
-          Experience
-        </a>
+      <li className="hover:text-gray-500">
+        <a href="#">Experience</a>
       </li>
 
-      <li>
-        <a
-          href="#"
-          className="block rounded-lg p-2 font-medium hover:bg-gray-100 hover:text-gray-700"
-        >
-          Contact
-        </a>
+      <li className="hover:text-gray-500">
+        <a href="#">Contact</a>
       </li>
     </ul>
   );
