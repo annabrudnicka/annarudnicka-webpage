@@ -3,6 +3,7 @@ import PortfolioSection from "./components/Sections/PortfolioSection";
 import ExperienceSection from "./components/Sections/ExperienceSection";
 import ContactSection from "./components/Sections/ContactSection";
 import HomeSection from "./components/Sections/HomeSection";
+import ScrollToHomeButton from "./components/ScrollToHomeButton";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
           <ContactSection />
         </section>
       </main>
+      <ScrollToHomeButton />
     </div>
   );
 }

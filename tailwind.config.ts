@@ -8,6 +8,10 @@ export default {
   ],
   theme: {
     extend: {
+      colors: {
+        customColor: "#F3EBE0",
+        customColorHover: "#e9e8e8",
+      },
       backgroundImage: {
         "gradient-bg": "linear-gradient(to bottom, #fff7ed, #e5e7eb)",
       },
