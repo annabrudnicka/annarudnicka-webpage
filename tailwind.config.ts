@@ -8,9 +8,39 @@ export default {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+      backgroundImage: {
+        "gradient-bg": "linear-gradient(to bottom, #fff7ed, #e5e7eb)",
+      },
+      animation: {
+        "scale-in": "scaleIn 3s ease-out forwards",
+        "left-animation": "slideInLeft 3s ease-out forwards",
+        "right-animation": "slideInRight 3s ease-out forwards",
+      },
+      keyframes: {
+        scaleIn: {
+          "0%": { transform: "scale(0)", opacity: "0" },
+          "100%": { transform: "scale(1)", opacity: "1" },
+        },
+        slideInLeft: {
+          "0%": {
+            transform: "translateX(-250%)",
+            opacity: "1",
+          },
+          "100%": {
+            transform: "translateX(0)",
+            opacity: "1",
+          },
+        },
+        slideInRight: {
+          "0%": {
+            transform: "translateX(250%)",
+            opacity: "1",
+          },
+          "100%": {
+            transform: "translateX(0)",
+            opacity: "1",
+          },
+        },
       },
     },
   },
