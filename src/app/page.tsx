@@ -8,11 +8,21 @@ export default function Home() {
   return (
     <div className="overflow-hidden">
       <main>
-        <HomeSection />
-        <SkillsSection />
-        <PortfolioSection />
-        <ExperienceSection />
-        <ContactSection />
+        <section id="home">
+          <HomeSection />
+        </section>
+        <section id="skills">
+          <SkillsSection />
+        </section>
+        <section id="portfolio">
+          <PortfolioSection />
+        </section>
+        <section id="experience">
+          <ExperienceSection />
+        </section>
+        <section id="contact">
+          <ContactSection />
+        </section>
       </main>
     </div>
   );
