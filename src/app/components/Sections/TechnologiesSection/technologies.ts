@@ -11,6 +11,7 @@ export const technologies = {
     { name: "TailwindCSS", src: "/docs/logos/TailwindCSS.svg" },
     { name: "daisyUI", src: "/docs/logos/daisyUI.png" },
     { name: "Bootstrap", src: "/docs/logos/Bootstrap.png" },
+    { name: "ChakraUI", src: "/docs/logos/ChakraUI.png" },
     { name: "Sass", src: "/docs/logos/Sass.png" },
     { name: "Figma", src: "/docs/logos/Figma.png" },
     { name: "BEM" },
