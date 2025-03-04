@@ -1,0 +1,26 @@
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 150 150" fill="none">
+<ns0:g clip-path="url(#clip0_105_19)">
+<ns0:mask id="mask0_105_19" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="150" height="150">
+<ns0:path d="M0 20.1V129.9C0 141.002 8.99844 150 20.1 150H129.9C141.002 150 150 141.002 150 129.9V20.1C150 8.99844 141.002 0 129.9 0H20.1C8.99844 0 0 8.99844 0 20.1Z" fill="white" />
+</ns0:mask>
+<ns0:g mask="url(#mask0_105_19)">
+<ns0:path d="M150 133.333C150 142.538 142.538 150 133.333 150H16.6672C7.4625 150 0 142.538 0 133.333V16.6672C0 7.4625 7.4625 0 16.6672 0H133.333C142.538 0 150 7.4625 150 16.6672V133.333Z" fill="black" />
+</ns0:g>
+<ns0:mask id="mask1_105_19" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="23" y="24" width="104" height="102">
+<ns0:path d="M23.6 24.8H126.8V126H23.6V24.8Z" fill="white" />
+</ns0:mask>
+<ns0:g mask="url(#mask1_105_19)">
+<ns0:mask id="mask2_105_19" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="150" height="150">
+<ns0:path d="M0 20.1V129.9C0 141.002 8.99844 150 20.1 150H129.9C141.002 150 150 141.002 150 129.9V20.1C150 8.99844 141.002 0 129.9 0H20.1C8.99844 0 0 8.99844 0 20.1Z" fill="white" />
+</ns0:mask>
+<ns0:g mask="url(#mask2_105_19)">
+<ns0:path d="M122 26.5078C117.183 23.3797 110.733 24.75 107.592 29.575L62.2328 99.4875L41.2797 80.1125C37.0547 76.2047 30.4625 76.4672 26.5578 80.6875C22.6547 84.9125 22.9125 91.5047 27.1375 95.4078L57.175 123.183C59.175 125.038 61.7172 125.955 64.2422 125.955C67.0453 125.955 70.6328 124.78 72.9875 121.208C74.3703 119.1 125.07 40.9172 125.07 40.9172C128.2 36.0875 126.825 29.6375 122 26.5078Z" fill="white" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+<ns0:defs>
+<ns0:clipPath id="clip0_105_19">
+<ns0:rect width="150" height="150" fill="white" rx="10" ry="10" />
+</ns0:clipPath>
+</ns0:defs>
+</ns0:svg>

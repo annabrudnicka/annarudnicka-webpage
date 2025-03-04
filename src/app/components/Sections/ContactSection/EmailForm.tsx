@@ -1,4 +1,4 @@
-import { sendEmail } from "../actions/sendEmail";
+import { sendEmail } from "../../../actions/sendEmail";
 
 export default function EmailForm() {
   return (

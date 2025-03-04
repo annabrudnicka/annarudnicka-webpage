@@ -1,9 +1,9 @@
-import SkillsSection from "./components/Sections/SkillsSection";
-import PortfolioSection from "./components/Sections/PortfolioSection";
-import ExperienceSection from "./components/Sections/ExperienceSection";
-import ContactSection from "./components/Sections/ContactSection";
-import HomeSection from "./components/Sections/HomeSection";
+import PortfolioSection from "./components/Sections/PortfolioSection/PortfolioSection";
+import ExperienceSection from "./components/Sections/ExperienceSection/ExperienceSection";
+import ContactSection from "./components/Sections/ContactSection/ContactSection";
+import HomeSection from "./components/Sections/HomeSection/HomeSection";
 import ScrollToHomeButton from "./components/ScrollToHomeButton";
+import TechnologiesSection from "./components/Sections/TechnologiesSection/TechnologiesSection";
 
 export default function Home() {
   return (
@@ -13,7 +13,7 @@ export default function Home() {
           <HomeSection />
         </section>
         <section id="skills">
-          <SkillsSection />
+          <TechnologiesSection />
         </section>
         <section id="portfolio">
           <PortfolioSection />

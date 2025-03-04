@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
-import EmailForm from "../EmailForm";
+import EmailForm from "./EmailForm";
 import Image from "next/image";
 import Link from "next/link";
 
