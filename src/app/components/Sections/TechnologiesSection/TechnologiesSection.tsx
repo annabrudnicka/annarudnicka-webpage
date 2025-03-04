@@ -14,7 +14,7 @@ const TechnologiesSection = () => {
                 {items.map((tech) => (
                   <div
                     key={tech.name}
-                    className="flex items-center bg-white rounded-md h-10 p-3 mr-3 mb-3 w-fit"
+                    className="flex items-center bg-white shadow-md rounded-md h-10 p-3 mr-3 mb-3 w-fit"
                   >
                     {tech.src && (
                       <Image

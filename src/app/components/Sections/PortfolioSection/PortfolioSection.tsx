@@ -24,138 +24,137 @@ const PortfolioSection = () => {
   }, []);
 
   return (
-    <section className="h-fit w-screen">
-      <div className="max-w-4xl mx-auto">
-        <div className="mx-auto max-w-screen-xl py-12">
-          <h1 className="text-4xl">Portfolio</h1>
+    <section className="h-fit w-screen py-16">
+      <div className="max-w-5xl mx-auto">
+        <div className="mx-auto max-w-screen-xl">
+          <h1 className="text-5xl  mb-10 ">Portfolio</h1>
 
-          <div className="mt-8 grid grid-cols-2 gap-x-12 gap-y-6">
-            <h3 className="mt-0.5 text-2xl text-gray-900">Eisenhower Matrix</h3>
-            <h3 className="mt-0.5 text-2xl text-gray-900">Food Planner</h3>
-            <article className="overflow-hidden rounded-lg shadow-sm transition hover:shadow-lg border">
-              <div className="group relative block bg-black">
-                <Image
-                  alt="Food Planner Image"
-                  src="/foodPlannerImage.png"
-                  width={400}
-                  height={400}
-                  className="absolute inset-0 h-full w-full object-cover  transition-opacity group-hover:opacity-50"
-                />
+          <div className="grid grid-cols-2 gap-x-12 ">
+            <div>
+              <h3 className="text-3xl font-semibold mb-6 text-center">
+                Food Planner
+              </h3>
+              <p className="text-lg text-gray-600">
+                Search, find, and discover interesting recipes. Easily compose
+                your shopping list by searching for ingredients and adding them
+                to your fridge. Data is fetched from an external API and
+                prepared accordingly.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-3xl font-semibold text-gray-800 mb-6 text-center">
+                Eisenhower Matrix
+              </h3>
+              <p className="text-lg text-gray-600">
+                Manage your tasks effectively by categorizing them based on
+                urgency and importance. The Eisenhower Matrix helps you
+                prioritize your daily responsibilities with a simple interface.
+              </p>
+            </div>
+            <div className="space-y-10 mt-8">
+              <article className="overflow-hidden rounded-2xl shadow-xl transition-transform transform hover:scale-105 hover:shadow-2xl border border-gray-300 w-96 mx-auto">
+                <div className="group relative block h-44  overflow-hidden rounded-2xl">
+                  <Image
+                    alt="Food Planner"
+                    src="/foodPlannerImage.png"
+                    width={1000}
+                    height={1000}
+                    className="absolute inset-0 h-full w-full object-cover transition-opacity group-hover:opacity-75"
+                  />
 
-                <div className="relative p-4 ">
-                  <div className="flex justify-center translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100 mt-32">
+                  <div className="absolute inset-0 flex items-center justify-center gap-8 opacity-0 transition-all transform group-hover:opacity-100 group-hover:translate-y-0 translate-y-8">
                     <Link
                       href="https://food-planner-2024.vercel.app"
                       target="_blank"
                     >
-                      <button className="bg-neutral-700 hover:bg-neutral-500 text-white mr-5">
+                      <button className="bg-neutral-700 hover:bg-neutral-600 text-white  transition-all transform hover:scale-105">
                         Demo
                       </button>
                     </Link>
-
                     <Link
                       href="https://github.com/annaabramowicz/food-planner-2024"
                       target="_blank"
                     >
-                      <button className="bg-neutral-700 hover:bg-neutral-500 text-white">
+                      <button className="bg-neutral-700 hover:bg-neutral-600 text-white transition-all transform hover:scale-105">
                         Code
                       </button>
                     </Link>
                   </div>
                 </div>
-              </div>
+              </article>
 
-              <div className="bg-white p-4">
-                <p className="my-2  text-gray-500">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Recusandae dolores, possimus pariatur animi temporibus
-                  nesciunt praesentium dolore sed nulla ipsum eveniet corporis
-                  quidem, mollitia itaque minus soluta, voluptates neque
-                  explicabo tempora nisi culpa eius atque dignissimos. Molestias
-                  explicabo corporis voluptatem?
-                </p>
-                <div className="flex justify-center flex-wrap">
-                  {portfolioTechnologies.EisenhowerMatrix.map((tech) => (
-                    <div
-                      key={tech.name}
-                      className="flex items-center h-8 p-2 w-fit"
-                    >
-                      {tech.src && (
-                        <Image
-                          src={tech.src}
-                          alt={`${tech.name} icon`}
-                          width={30}
-                          height={30}
-                          className="object-contain w-full h-full mr-2"
-                        />
-                      )}
-                      <span>{tech.name}</span>
-                    </div>
-                  ))}
-                </div>
+              <div className="flex justify-center flex-wrap gap-6 mt-8">
+                {portfolioTechnologies.FoodPlanner.map((tech) => (
+                  <div
+                    key={tech.name}
+                    className="flex items-center bg-white shadow-md rounded-md h-10 p-3 w-fit"
+                  >
+                    {tech.src && (
+                      <Image
+                        src={tech.src}
+                        alt={`${tech.name} icon`}
+                        width={30}
+                        height={30}
+                        className="object-contain w-full h-full mr-2"
+                      />
+                    )}
+                    <span>{tech.name}</span>
+                  </div>
+                ))}
               </div>
-            </article>
-            <article className="overflow-hidden rounded-lg shadow-sm transition hover:shadow-lg border">
-              <div className="group relative block bg-black">
-                <Image
-                  alt="Food Planner Image"
-                  src="/foodPlannerImage.png"
-                  width={400}
-                  height={400}
-                  className="absolute inset-0 h-full w-full object-cover  transition-opacity group-hover:opacity-50"
-                />
+            </div>
+            <div className="space-y-10 mt-8">
+              <article className="overflow-hidden rounded-2xl shadow-xl transition-transform transform hover:scale-105 hover:shadow-2xl border border-gray-300 w-96 mx-auto">
+                <div className="group relative block h-44 overflow-hidden rounded-2xl">
+                  <Image
+                    alt="Eisenhower Matrix"
+                    src="/eisenhowerMatrixImage.png"
+                    width={1000}
+                    height={1000}
+                    className="absolute inset-0 h-full w-full object-cover transition-opacity group-hover:opacity-75"
+                  />
 
-                <div className="relative p-4 ">
-                  <div className="flex justify-center translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100 mt-32">
+                  <div className="absolute inset-0 flex items-center justify-center gap-8 opacity-0 transition-all transform group-hover:opacity-100 group-hover:translate-y-0 translate-y-8">
                     <Link
-                      href="https://food-planner-2024.vercel.app"
+                      href="https://eisenhower-matrix-2024.vercel.app"
                       target="_blank"
                     >
-                      <button className="bg-neutral-700 hover:bg-neutral-500 text-white mr-5">
+                      <button className="bg-neutral-700 hover:bg-neutral-600 text-white  transition-all transform hover:scale-105">
                         Demo
                       </button>
                     </Link>
-
                     <Link
-                      href="https://github.com/annaabramowicz/food-planner-2024"
+                      href="https://github.com/annaabramowicz/eisenhower-matrix-2024"
                       target="_blank"
                     >
-                      <button className="bg-neutral-700 hover:bg-neutral-500 text-white">
+                      <button className="bg-neutral-700 hover:bg-neutral-600 text-white transition-all transform hover:scale-105">
                         Code
                       </button>
                     </Link>
                   </div>
                 </div>
-              </div>
+              </article>
 
-              <div className="p-4">
-                <p className="my-2  text-gray-500">
-                  Search, find, and discover interesting recipes. You can also
-                  easily compose your shopping list by searching for a variety
-                  of ingredients and adding them to your fridge. Data is
-                  fetching from an external API and prepared appropriately.
-                </p>
-                <div className="flex justify-center flex-wrap mt-14">
-                  {portfolioTechnologies.FoodPlanner.map((tech) => (
-                    <div
-                      key={tech.name}
-                      className="flex items-center h-8 p-2 w-fit"
-                    >
-                      {tech.src && (
-                        <Image
-                          src={tech.src}
-                          alt={`${tech.name} icon`}
-                          width={30}
-                          height={30}
-                          className="object-contain w-full h-full mr-2"
-                        />
-                      )}
-                      <span>{tech.name}</span>
-                    </div>
-                  ))}
-                </div>
+              <div className="flex justify-center flex-wrap gap-6 mt-8">
+                {portfolioTechnologies.EisenhowerMatrix.map((tech) => (
+                  <div
+                    key={tech.name}
+                    className="flex items-center bg-white shadow-md rounded-md h-10 p-3 w-fit"
+                  >
+                    {tech.src && (
+                      <Image
+                        src={tech.src}
+                        alt={`${tech.name} icon`}
+                        width={30}
+                        height={30}
+                        className="object-contain w-full h-full mr-2"
+                      />
+                    )}
+                    <span>{tech.name}</span>
+                  </div>
+                ))}
               </div>
-            </article>
+            </div>
           </div>
         </div>
       </div>
