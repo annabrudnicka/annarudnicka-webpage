@@ -25,7 +25,7 @@ const ContactSection = () => {
 
   return (
     <section className="h-fit w-screen px-4 py-12">
-      <div className="flex justify-between max-w-4xl mx-auto">
+      <div className="flex justify-between max-w-5xl mx-auto">
         <div className="scale-in-element opacity-0 scale-0 w-1/2 pr-2">
           <h1 className="text-4xl pb-3">Contact</h1>
 

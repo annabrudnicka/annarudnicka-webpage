@@ -45,7 +45,7 @@ export default function EmailForm() {
         <div className="flex justify-center">
           <button
             type="submit"
-            className="bg-neutral-700 hover:bg-neutral-500 text-white sm:w-auto"
+            className="bg-neutral-700 hover:bg-neutral-500 text-white w-auto"
           >
             Send
           </button>

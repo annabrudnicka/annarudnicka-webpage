@@ -4,7 +4,7 @@ import { technologies } from "./technologies";
 const TechnologiesSection = () => {
   return (
     <section className="bg-gradient-bg h-fit w-screen">
-      <div className="max-w-4xl mx-auto py-12">
+      <div className="max-w-5xl mx-auto py-12">
         <h1 className="text-4xl mb-8">Technologies</h1>
         <div className="columns-2 gap-9">
           {Object.entries(technologies).map(([category, items]) => (
