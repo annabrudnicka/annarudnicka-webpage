@@ -12,7 +12,7 @@ export default function Home() {
         <section id="home">
           <HomeSection />
         </section>
-        <section id="skills">
+        <section id="technologies">
           <TechnologiesSection />
         </section>
         <section id="portfolio">

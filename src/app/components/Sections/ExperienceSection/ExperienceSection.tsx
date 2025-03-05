@@ -50,15 +50,15 @@ const ExperienceSection = () => {
   ];
 
   return (
-    <section className="h-screen w-screen py-16 bg-gradient-bg flex items-center">
-      <div className="max-w-5xl py-12 mx-auto">
+    <section className="h-fit w-screen  bg-gradient-bg flex items-center">
+      <div className="max-w-5xl py-8 mx-auto">
         <h1 className="text-4xl mb-8">Experience</h1>
 
-        <div className="grid grid-cols-2 gap-6">
+        <div className="grid grid-cols-2 gap-4">
           {experiences.map((exp, index) => (
             <div
               key={index}
-              className={`fade-in bg-white p-4 rounded-xl shadow-md h-40 ${
+              className={`fade-in bg-white p-3 rounded-xl shadow-md h-[150px] ${
                 exp.company.includes("Capgemini") &&
                 "border border-neutral-400 hover:shadow-lg transition-transform transform hover:scale-[1.05]"
               }`}
@@ -68,8 +68,8 @@ const ExperienceSection = () => {
                   <Image
                     src="/Capgemini.svg"
                     alt="Capgemini icon"
-                    width={100}
-                    height={100}
+                    width={70}
+                    height={70}
                     className="object-contain mr-6"
                   />
                   <div className="flex-1">

@@ -8,8 +8,8 @@ const Menu = () => {
   return (
     <ul className="flex justify-end items-center space-x-9 h-16">
       <li className="hover:text-gray-500 cursor-pointer">
-        <ScrollLink to="skills" smooth={true} duration={1000}>
-          Skills
+        <ScrollLink to="technologies" smooth={true} duration={1000}>
+          Technologies
         </ScrollLink>
       </li>
 

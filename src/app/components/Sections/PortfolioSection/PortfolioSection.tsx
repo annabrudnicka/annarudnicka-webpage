@@ -24,14 +24,14 @@ const PortfolioSection = () => {
   }, []);
 
   return (
-    <section className="h-fit w-screen py-16">
+    <section className="h-fit w-screen py-8">
       <div className="max-w-5xl mx-auto">
         <div className="mx-auto max-w-screen-xl">
-          <h1 className="text-4xl mb-10">Portfolio</h1>
+          <h1 className="text-4xl mb-6">Portfolio</h1>
 
           <div className="grid grid-cols-2 gap-x-12 ">
             <div>
-              <h3 className="text-3xl font-semibold mb-6 text-center">
+              <h3 className="text-3xl font-semibold mb-4 text-center">
                 Food Planner
               </h3>
               <p className="text-lg text-gray-600">
@@ -42,7 +42,7 @@ const PortfolioSection = () => {
               </p>
             </div>
             <div>
-              <h3 className="text-3xl font-semibold text-gray-800 mb-6 text-center">
+              <h3 className="text-3xl font-semibold text-gray-800 mb-4 text-center">
                 Eisenhower Matrix
               </h3>
               <p className="text-lg text-gray-600">
@@ -51,15 +51,15 @@ const PortfolioSection = () => {
                 prioritize your daily responsibilities with a simple interface.
               </p>
             </div>
-            <div className="space-y-10 mt-8">
+            <div className="mt-5">
               <article className="overflow-hidden rounded-2xl shadow-xl transition-transform transform hover:scale-105 hover:shadow-2xl border border-gray-300 w-96 mx-auto">
-                <div className="group relative block h-44  overflow-hidden rounded-2xl">
+                <div className="group relative  h-44  overflow-hidden rounded-2xl">
                   <Image
                     alt="Food Planner"
                     src="/foodPlannerImage.png"
                     width={1000}
                     height={1000}
-                    className="absolute inset-0 h-full w-full object-cover transition-opacity group-hover:opacity-75"
+                    className=" w-full object-cover transition-opacity group-hover:opacity-75"
                   />
 
                   <div className="absolute inset-0 flex items-center justify-center gap-8 opacity-0 transition-all transform group-hover:opacity-100 group-hover:translate-y-0 translate-y-8">
@@ -83,7 +83,7 @@ const PortfolioSection = () => {
                 </div>
               </article>
 
-              <div className="flex justify-center flex-wrap gap-6 mt-8">
+              <div className="flex justify-center flex-wrap gap-4 mt-5">
                 {portfolioTechnologies.FoodPlanner.map((tech) => (
                   <div
                     key={tech.name}
@@ -103,7 +103,7 @@ const PortfolioSection = () => {
                 ))}
               </div>
             </div>
-            <div className="space-y-10 mt-8">
+            <div className="mt-5">
               <article className="overflow-hidden rounded-2xl shadow-xl transition-transform transform hover:scale-105 hover:shadow-2xl border border-gray-300 w-96 mx-auto">
                 <div className="group relative block h-44 overflow-hidden rounded-2xl">
                   <Image
@@ -135,7 +135,7 @@ const PortfolioSection = () => {
                 </div>
               </article>
 
-              <div className="flex justify-center flex-wrap gap-6 mt-8">
+              <div className="flex justify-center flex-wrap gap-4 mt-5">
                 {portfolioTechnologies.EisenhowerMatrix.map((tech) => (
                   <div
                     key={tech.name}
