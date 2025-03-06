@@ -26,7 +26,7 @@ const ContactSection = () => {
   return (
     <section className="h-fit w-screen px-4 py-8">
       <div className="max-w-5xl mx-auto">
-        <h1 className="text-4xl pb-8">Contact</h1>
+        <h1 className="font-playfair text-4xl pb-8">Contact</h1>
         <div className="flex justify-between">
           <div className="scale-in-element opacity-0 scale-0 w-1/2 pr-2 h-full">
             <p className="max-w-xl text-lg  pb-5">

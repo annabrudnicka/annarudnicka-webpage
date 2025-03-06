@@ -5,12 +5,18 @@
 :root {
   --backgroundFirst: #ffffff;
   --foreground: #171717;
+  --firstFont: Montserrat, Sans-serif;
+  --secondFont: Playfair, Sans-serif;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Montserrat, Sans-serif;
+}
+
+.playfair {
+  font-family: (--secondFont);
 }
 
 button {

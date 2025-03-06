@@ -15,6 +15,10 @@ export default {
       backgroundImage: {
         "gradient-bg": "linear-gradient(to bottom, #fff7ed, #e5e7eb)",
       },
+      fontFamily: {
+        montserrat: ["var(--font-montserrat)"],
+        playfair: ["var(--font-playfair)"],
+      },
       animation: {
         "scale-in": "scaleIn 3s ease-out forwards",
         "left-animation": "slideInLeft 3s ease-out forwards",
