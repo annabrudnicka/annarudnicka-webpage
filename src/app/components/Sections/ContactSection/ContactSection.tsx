@@ -24,12 +24,12 @@ const ContactSection = () => {
   }, []);
 
   return (
-    <section className="h-fit w-screen px-4 py-8">
-      <div className="max-w-5xl mx-auto">
-        <h1 className="font-playfair text-4xl pb-8">Contact</h1>
+    <section className="h-screen w-screen px-4 py-8">
+      <div className="max-w-6xl mx-auto">
+        <h1 className="font-playfair text-5xl pb-8">Contact</h1>
         <div className="flex justify-between">
           <div className="scale-in-element opacity-0 scale-0 w-1/2 pr-2 h-full">
-            <p className="max-w-xl text-lg  pb-5">
+            <p className="max-w-xl text-md pb-5">
               If you happen to have any questions about my profile or potential
               cooperation, please feel free to contact me.
             </p>
@@ -41,7 +41,10 @@ const ContactSection = () => {
                 width={40}
                 height={40}
               />
-              <Link href={"www.linkedin.com/in/annababramowicz"}>
+              <Link
+                href={"www.linkedin.com/in/annababramowicz"}
+                className="text-md"
+              >
                 linkedin/annaabramowicz
               </Link>
             </span>
@@ -53,12 +56,15 @@ const ContactSection = () => {
                 width={40}
                 height={40}
               />
-              <Link href={"https://www.github.com/annaabramowicz"}>
+              <Link
+                href={"https://www.github.com/annaabramowicz"}
+                className="text-md"
+              >
                 github/annaabramowicz
               </Link>
             </span>
 
-            <span className="flex items-center gap-5 pb-5">
+            <span className="flex items-center text-md gap-5 pb-5">
               <Image
                 src="/mailColor.png"
                 alt="mail icon"
@@ -68,7 +74,7 @@ const ContactSection = () => {
               anna.b.abramowicz@gmail.com
             </span>
 
-            <span className="flex items-center gap-5 pb-5">
+            <span className="flex items-center text-md gap-5 pb-5">
               <Image
                 src="/phoneColor.png"
                 alt="phone icon"

@@ -16,7 +16,7 @@ export const technologies = {
     { name: "Figma", src: "/docs/logos/Figma.png" },
     { name: "BEM" },
   ],
-  "Backend & Data Base": [
+  "Backend and Data Base": [
     { name: "Next.js", src: "/docs/logos/Next.js.svg" },
     { name: "Node.js", src: "/docs/logos/Node.js.png" },
     { name: "Express", src: "/docs/logos/Express.png" },

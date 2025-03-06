@@ -25,16 +25,16 @@ const PortfolioSection = () => {
 
   return (
     <section className="h-fit w-screen py-8">
-      <div className="max-w-5xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         <div className="mx-auto max-w-screen-xl">
-          <h1 className="text-4xl mb-6">Portfolio</h1>
+          <h1 className="font-playfair text-5xl mb-8">Portfolio</h1>
 
           <div className="grid grid-cols-2 gap-x-12 ">
             <div>
-              <h3 className="text-3xl font-semibold mb-4 text-center">
+              <h3 className="font-playfair text-3xl mb-5 text-center">
                 Food Planner
               </h3>
-              <p className="text-lg text-gray-600">
+              <p className="text-md text-gray-600 mb-3">
                 Search, find, and discover interesting recipes. Easily compose
                 your shopping list by searching for ingredients and adding them
                 to your fridge. Data is fetched from an external API and
@@ -42,16 +42,16 @@ const PortfolioSection = () => {
               </p>
             </div>
             <div>
-              <h3 className="text-3xl font-semibold text-gray-800 mb-4 text-center">
+              <h3 className="font-playfair text-3xl  mb-5 text-center">
                 Eisenhower Matrix
               </h3>
-              <p className="text-lg text-gray-600">
+              <p className="text-md text-gray-600 mb-3">
                 Manage your tasks effectively by categorizing them based on
                 urgency and importance. The Eisenhower Matrix helps you
                 prioritize your daily responsibilities with a simple interface.
               </p>
             </div>
-            <div className="mt-5">
+            <div className="my-7">
               <article className="overflow-hidden rounded-2xl shadow-xl transition-transform transform hover:scale-105 hover:shadow-2xl border border-gray-300 w-96 mx-auto">
                 <div className="group relative  h-44  overflow-hidden rounded-2xl">
                   <Image
@@ -83,7 +83,7 @@ const PortfolioSection = () => {
                 </div>
               </article>
 
-              <div className="flex justify-center flex-wrap gap-4 mt-5">
+              <div className="flex justify-center flex-wrap gap-4 mt-7">
                 {portfolioTechnologies.FoodPlanner.map((tech) => (
                   <div
                     key={tech.name}
@@ -103,7 +103,7 @@ const PortfolioSection = () => {
                 ))}
               </div>
             </div>
-            <div className="mt-5">
+            <div className="my-7">
               <article className="overflow-hidden rounded-2xl shadow-xl transition-transform transform hover:scale-105 hover:shadow-2xl border border-gray-300 w-96 mx-auto">
                 <div className="group relative block h-44 overflow-hidden rounded-2xl">
                   <Image
@@ -135,7 +135,7 @@ const PortfolioSection = () => {
                 </div>
               </article>
 
-              <div className="flex justify-center flex-wrap gap-4 mt-5">
+              <div className="flex justify-center flex-wrap gap-4 mt-7">
                 {portfolioTechnologies.EisenhowerMatrix.map((tech) => (
                   <div
                     key={tech.name}

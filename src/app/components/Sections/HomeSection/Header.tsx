@@ -7,7 +7,7 @@ const Header = () => {
       <div className="flex justify-between items-center py-4">
         <span className="text-left w-[276px]">tel.: +48 530 728 298</span>
         <DownloadCVButton />
-        <span className="text-right w-[276px]">
+        <span className="text-right w-[350px]">
           email: anna.b.abramowicz@gmail.com
         </span>
       </div>
