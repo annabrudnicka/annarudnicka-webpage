@@ -124,7 +124,7 @@ const PortfolioSection = () => {
                       </button>
                     </Link>
                     <Link
-                      href="https://github.com/annaabramowicz/eisenhower-matrix-2024"
+                      href="https://github.com/annaabramowicz/eisenhower-matrix"
                       target="_blank"
                     >
                       <button className="bg-neutral-700 hover:bg-neutral-600 text-white transition-all transform hover:scale-105">
