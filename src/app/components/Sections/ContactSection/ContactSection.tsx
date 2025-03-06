@@ -8,25 +8,9 @@ import useIntersectionObserver from "@/app/hooks/useIntersectionObserver";
 
 const ContactSection = () => {
   useIntersectionObserver(".scale-in-element");
-  // useEffect(() => {
-  //   const elements = document.querySelectorAll(".scale-in-element");
-
-  //   const observer = new IntersectionObserver(
-  //     (entries, observer) => {
-  //       entries.forEach((entry) => {
-  //         if (entry.isIntersecting) {
-  //           entry.target.classList.add("animate-scale-in");
-  //           observer.unobserve(entry.target);
-  //         }
-  //       });
-  //     },
-  //     { threshold: 0.5 }
-  //   );
-  //   elements.forEach((element) => observer.observe(element));
-  // }, []);
 
   return (
-    <section className="h-screen w-screen px-4 py-8">
+    <section className="h-fit w-screen px-4 py-8">
       <div className="max-w-6xl mx-auto">
         <h1 className="font-playfair text-5xl pb-8">Contact</h1>
         <div className="flex justify-between">
