@@ -1,27 +1,29 @@
 "use client";
 
-import { useEffect } from "react";
+// import { useEffect } from "react";
 import EmailForm from "./EmailForm";
 import Image from "next/image";
 import Link from "next/link";
+import useIntersectionObserver from "@/app/hooks/useIntersectionObserver";
 
 const ContactSection = () => {
-  useEffect(() => {
-    const elements = document.querySelectorAll(".scale-in-element");
+  useIntersectionObserver(".scale-in-element");
+  // useEffect(() => {
+  //   const elements = document.querySelectorAll(".scale-in-element");
 
-    const observer = new IntersectionObserver(
-      (entries, observer) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("animate-scale-in");
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.5 }
-    );
-    elements.forEach((element) => observer.observe(element));
-  }, []);
+  //   const observer = new IntersectionObserver(
+  //     (entries, observer) => {
+  //       entries.forEach((entry) => {
+  //         if (entry.isIntersecting) {
+  //           entry.target.classList.add("animate-scale-in");
+  //           observer.unobserve(entry.target);
+  //         }
+  //       });
+  //     },
+  //     { threshold: 0.5 }
+  //   );
+  //   elements.forEach((element) => observer.observe(element));
+  // }, []);
 
   return (
     <section className="h-screen w-screen px-4 py-8">

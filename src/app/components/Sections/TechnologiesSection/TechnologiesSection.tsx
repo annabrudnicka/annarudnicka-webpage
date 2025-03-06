@@ -1,14 +1,22 @@
+"use client";
+
 import Image from "next/image";
 import { technologies } from "./technologies";
+import useIntersectionObserver from "@/app/hooks/useIntersectionObserver";
 
 const TechnologiesSection = () => {
+  useIntersectionObserver("scale-in-element");
+
   return (
     <section className="bg-gradient-bg h-fit w-screen">
       <div className="max-w-6xl mx-auto py-8">
         <h1 className="font-playfair text-5xl mb-7">Technologies</h1>
         <div className="columns-2 gap-9">
           {Object.entries(technologies).map(([category, items]) => (
-            <div key={category} className="break-inside-avoid mb-4">
+            <div
+              key={category}
+              className="scale-in-element break-inside-avoid mb-4"
+            >
               <h2 className="font-playfair text-2xl mb-3 border-b pb-2">
                 {category}
               </h2>

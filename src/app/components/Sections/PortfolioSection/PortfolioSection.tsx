@@ -2,26 +2,11 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect } from "react";
 import { portfolioTechnologies } from "./portfolioTechnologies";
+import useIntersectionObserver from "@/app/hooks/useIntersectionObserver";
 
 const PortfolioSection = () => {
-  useEffect(() => {
-    const elements = document.querySelectorAll(".scale-in-element");
-
-    const observer = new IntersectionObserver(
-      (entries, observer) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("animate-scale-in");
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.5 }
-    );
-    elements.forEach((element) => observer.observe(element));
-  }, []);
+  useIntersectionObserver("scale-in-element");
 
   return (
     <section className="h-fit w-screen py-8">
@@ -30,7 +15,7 @@ const PortfolioSection = () => {
           <h1 className="font-playfair text-5xl mb-8">Portfolio</h1>
 
           <div className="grid grid-cols-2 gap-x-12 ">
-            <div>
+            <div className="scale-in-element">
               <h3 className="font-playfair text-3xl mb-5 text-center">
                 Food Planner
               </h3>
@@ -41,7 +26,7 @@ const PortfolioSection = () => {
                 prepared accordingly.
               </p>
             </div>
-            <div>
+            <div className="scale-in-element">
               <h3 className="font-playfair text-3xl  mb-5 text-center">
                 Eisenhower Matrix
               </h3>
@@ -51,7 +36,7 @@ const PortfolioSection = () => {
                 prioritize your daily responsibilities with a simple interface.
               </p>
             </div>
-            <div className="my-7">
+            <div className="scale-in-element my-7">
               <article className="overflow-hidden rounded-2xl shadow-xl transition-transform transform hover:scale-105 hover:shadow-2xl border border-gray-300 w-96 mx-auto">
                 <div className="group relative  h-44  overflow-hidden rounded-2xl">
                   <Image
@@ -103,7 +88,7 @@ const PortfolioSection = () => {
                 ))}
               </div>
             </div>
-            <div className="my-7">
+            <div className="scale-in-element my-7">
               <article className="overflow-hidden rounded-2xl shadow-xl transition-transform transform hover:scale-105 hover:shadow-2xl border border-gray-300 w-96 mx-auto">
                 <div className="group relative block h-44 overflow-hidden rounded-2xl">
                   <Image
