@@ -4,13 +4,19 @@ import { useState } from "react";
 import Image from "next/image";
 import { experiences } from "./experiences";
 import useIntersectionObserver from "@/app/hooks/useIntersectionObserver";
+import {
+  CapgeminiCardProps,
+  DefaultCardProps,
+  ExperienceCardProps,
+  PopupProps,
+} from "@/app/types";
 
 // ExperienceSection Component
 const ExperienceSection = () => {
   useIntersectionObserver("scale-in-element");
-  const [activePopup, setActivePopup] = useState(null);
+  const [activePopup, setActivePopup] = useState<number | null>(null);
 
-  const togglePopup = (index) => {
+  const togglePopup = (index: number) => {
     setActivePopup(activePopup === index ? null : index);
   };
 
@@ -35,7 +41,12 @@ const ExperienceSection = () => {
 };
 
 // ExperienceCard Component
-const ExperienceCard = ({ exp, index, togglePopup, activePopup }) => (
+const ExperienceCard = ({
+  exp,
+  index,
+  togglePopup,
+  activePopup,
+}: ExperienceCardProps) => (
   <div className="scale-in-element relative bg-white shadow-md h-36  rounded-xl flex flex-col justify-between">
     {exp.company.includes("Capgemini") ? (
       <CapgeminiCard exp={exp} index={index} togglePopup={togglePopup} />
@@ -49,7 +60,7 @@ const ExperienceCard = ({ exp, index, togglePopup, activePopup }) => (
 );
 
 // CapgeminiCard Component
-const CapgeminiCard = ({ exp, index, togglePopup }) => (
+const CapgeminiCard = ({ exp, index, togglePopup }: CapgeminiCardProps) => (
   <div className="flex items-start border border-gray-600 rounded-xl h-[inherit] p-3">
     <Image
       src="/Capgemini.svg"
@@ -78,7 +89,7 @@ const CapgeminiCard = ({ exp, index, togglePopup }) => (
 );
 
 // DefaultCard Component
-const DefaultCard = ({ exp, index, togglePopup }) => (
+const DefaultCard = ({ exp, index, togglePopup }: DefaultCardProps) => (
   <div className="flex flex-col justify-between h-full p-3">
     <div className="flex-1">
       <h3 className="font-playfair text-3xl">{exp.title}</h3>
@@ -98,7 +109,7 @@ const DefaultCard = ({ exp, index, togglePopup }) => (
 );
 
 // Popup Component
-const Popup = ({ exp, closePopup }) => (
+const Popup = ({ exp, closePopup }: PopupProps) => (
   <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
     <div className="bg-white border rounded-lg p-3 max-w-2xl relative">
       <button
@@ -113,7 +124,7 @@ const Popup = ({ exp, closePopup }) => (
           <h3 className="font-playfair text-2xl mb-2">{project.title}</h3>
           <ul className="list-disc list-inside space-y-1">
             {project.tasks.map((task, taskIndex) => (
-              <li key={taskIndex}>{task}</li>
+              <li key={taskIndex}>{task.description}</li>
             ))}
           </ul>
         </div>

@@ -1,3 +1,5 @@
+// experiences.ts
+
 export const experiences = [
   {
     title: "Personal Development",
@@ -9,9 +11,18 @@ export const experiences = [
         methodology: "Self-Learning",
         industry: "Technology",
         tasks: [
-          "Developed personal projects using modern web technologies.",
-          "Explored new frameworks and libraries to stay up-to-date.",
-          "Built full-stack applications with React, Next.js and Mongop",
+          {
+            description:
+              "Developed personal projects using modern web technologies.",
+          },
+          {
+            description:
+              "Explored new frameworks and libraries to stay up-to-date.",
+          },
+          {
+            description:
+              "Built full-stack applications with React, Next.js and MongoDB",
+          },
         ],
       },
     ],
@@ -26,9 +37,15 @@ export const experiences = [
         methodology: "Traditional",
         industry: "Construction",
         tasks: [
-          "Created designs and technical drawings using Autodesk AutoCAD.",
-          "Performed calculations and invoicing in MS Excel.",
-          "Selected insulation covers for industrial equipment based on project requirements, budget, and efficiency.",
+          {
+            description:
+              "Created designs and technical drawings using Autodesk AutoCAD.",
+          },
+          { description: "Performed calculations and invoicing in MS Excel." },
+          {
+            description:
+              "Selected insulation covers for industrial equipment based on project requirements, budget, and efficiency.",
+          },
         ],
       },
     ],
@@ -43,9 +60,15 @@ export const experiences = [
         methodology: "Entrepreneurship",
         industry: "Hospitality",
         tasks: [
-          "Managed property rentals and guest relations.",
-          "Optimized pricing and occupancy rates to maximize revenue.",
-          "Handled marketing, booking platforms, and customer support.",
+          { description: "Managed property rentals and guest relations." },
+          {
+            description:
+              "Optimized pricing and occupancy rates to maximize revenue.",
+          },
+          {
+            description:
+              "Handled marketing, booking platforms, and customer support.",
+          },
         ],
       },
     ],
@@ -60,10 +83,15 @@ export const experiences = [
         methodology: "Scrum",
         industry: "Insurance",
         tasks: [
-          "Content migration from CMS Sitecore 8.2 to 9.0.2 with PowerShell.",
-          "Automating migration with PowerShell scripts.",
-          "Participating in code reviews and sprint planning.",
-          "Troubleshooting and optimizing migration processes.",
+          {
+            description:
+              "Content migration from CMS Sitecore 8.2 to 9.0.2 with PowerShell.",
+          },
+          { description: "Automating migration with PowerShell scripts." },
+          { description: "Participating in code reviews and sprint planning." },
+          {
+            description: "Troubleshooting and optimizing migration processes.",
+          },
         ],
       },
       {
@@ -71,10 +99,19 @@ export const experiences = [
         methodology: "Kanban",
         industry: "Logistics",
         tasks: [
-          "Bug fixing in production and test environments (Java).",
-          "Java 8, Spring Framework, Hibernate, Maven, Git.",
-          "Development of system functionalities based on requests.",
-          "Code reviews, improving code quality, and ensuring best practices.",
+          {
+            description:
+              "Bug fixing in production and test environments (Java).",
+          },
+          { description: "Java 8, Spring Framework, Hibernate, Maven, Git." },
+          {
+            description:
+              "Development of system functionalities based on requests.",
+          },
+          {
+            description:
+              "Code reviews, improving code quality, and ensuring best practices.",
+          },
         ],
       },
       {
@@ -82,10 +119,10 @@ export const experiences = [
         methodology: "N/A",
         industry: "N/A",
         tasks: [
-          "Backend solutions with Java, Spring, Hibernate.",
-          "Frontend interfaces with JavaScript and Angular 5.",
-          "Working with MySQL databases and Git tools.",
-          "Testing, debugging, and deploying applications.",
+          { description: "Backend solutions with Java, Spring, Hibernate." },
+          { description: "Frontend interfaces with JavaScript and Angular 5." },
+          { description: "Working with MySQL databases and Git tools." },
+          { description: "Testing, debugging, and deploying applications." },
         ],
       },
     ],
@@ -100,9 +137,18 @@ export const experiences = [
         methodology: "Traditional",
         industry: "Construction",
         tasks: [
-          "Designed and selected prefabricated concrete slot drainage systems for airport investments and container terminals.",
-          "Utilized Autodesk AutoCAD for technical drawings and designs.",
-          "Ensured compliance with industry standards and regulations.",
+          {
+            description:
+              "Designed and selected prefabricated concrete slot drainage systems for airport investments and container terminals.",
+          },
+          {
+            description:
+              "Utilized Autodesk AutoCAD for technical drawings and designs.",
+          },
+          {
+            description:
+              "Ensured compliance with industry standards and regulations.",
+          },
         ],
       },
     ],
