@@ -67,7 +67,7 @@ const PortfolioSection = () => {
                   </button>
                 </Link>
                 <Link
-                  href="https://github.com/annaabramowicz/food-planner-2024"
+                  href="https://github.com/annaabramowicz/eisenhower-matrix"
                   target="_blank"
                 >
                   <button className="bg-gradient-bg hover:bg-neutral-600 border-gray-400 transition-all transform hover:scale-105">
