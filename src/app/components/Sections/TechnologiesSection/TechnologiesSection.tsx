@@ -9,9 +9,9 @@ const TechnologiesSection = () => {
 
   return (
     <section className="bg-gradient-bg h-fit w-screen">
-      <div className="max-w-6xl mx-auto py-8">
+      <div className="max-w-6xl mx-2 sm:mx-auto py-8">
         <h1 className="font-playfair text-5xl mb-4">Technologies</h1>
-        <div className="columns-2 gap-9">
+        <div className="sm:columns-2 gap-9">
           {Object.entries(technologies).map(([category, items]) => (
             <div
               key={category}
