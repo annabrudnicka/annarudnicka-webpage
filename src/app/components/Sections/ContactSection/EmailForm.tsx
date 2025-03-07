@@ -2,7 +2,7 @@ import { sendEmail } from "@/app/components/Sections/ContactSection/sendEmail";
 
 export default function EmailForm() {
   return (
-    <div className="scale-in-element opacity-0 scale-0 rounded-lg bg-gradient-bg p-8 shadow-lg w-1/2 ml-12">
+    <div className="scale-in-element opacity-0 scale-0 rounded-lg bg-gradient-bg p-8 shadow-lg sm:w-1/2 sm:ml-12">
       <form action={sendEmail} className="space-y-4">
         <div>
           <label className="sr-only" htmlFor="title">
