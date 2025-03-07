@@ -1,4 +1,4 @@
-import { sendEmail } from "../../../actions/sendEmail";
+import { sendEmail } from "@/app/components/Sections/ContactSection/sendEmail";
 
 export default function EmailForm() {
   return (
@@ -13,6 +13,7 @@ export default function EmailForm() {
             placeholder="Title"
             type="text"
             name="title"
+            required
           />
         </div>
 
@@ -26,6 +27,7 @@ export default function EmailForm() {
               placeholder="E-mail"
               type="email"
               name="email"
+              required
             />
           </div>
         </div>
@@ -39,6 +41,7 @@ export default function EmailForm() {
             className="w-full h-72 rounded-lg p-3 text-sm"
             placeholder="Message"
             name="message"
+            required
           ></textarea>
         </div>
 

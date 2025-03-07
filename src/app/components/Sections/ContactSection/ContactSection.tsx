@@ -5,6 +5,7 @@ import EmailForm from "./EmailForm";
 import Image from "next/image";
 import Link from "next/link";
 import useIntersectionObserver from "@/app/hooks/useIntersectionObserver";
+import DownloadCVButton from "../HomeSection/DownloadCVButton";
 
 const ContactSection = () => {
   useIntersectionObserver(".scale-in-element");
@@ -69,6 +70,9 @@ const ContactSection = () => {
               />
               +48 530 728 298
             </span>
+            <div className="text-md">
+              <DownloadCVButton className="bg-gradient-bg ml-16 mt-3" />
+            </div>
           </div>
           <EmailForm />
         </div>
