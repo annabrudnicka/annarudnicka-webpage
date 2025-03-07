@@ -10,17 +10,17 @@ const TechnologiesSection = () => {
   return (
     <section className="bg-gradient-bg h-fit w-screen">
       <div className="max-w-6xl mx-auto py-8">
-        <h1 className="font-playfair text-5xl mb-7">Technologies</h1>
+        <h1 className="font-playfair text-5xl mb-4">Technologies</h1>
         <div className="columns-2 gap-9">
           {Object.entries(technologies).map(([category, items]) => (
             <div
               key={category}
-              className="scale-in-element break-inside-avoid mb-4"
+              className="scale-in-element break-inside-avoid mb-2"
             >
               <h2 className="font-playfair text-2xl mb-3 border-b pb-2">
                 {category}
               </h2>
-              <div className="flex flex-wrap gap-4">
+              <div className="flex flex-wrap gap-2">
                 {items.map((tech) => (
                   <div
                     key={tech.name}

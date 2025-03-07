@@ -12,13 +12,11 @@ const PortfolioSection = () => {
     <section className="h-fit w-screen py-8">
       <div className="max-w-6xl mx-auto">
         <div className="mx-auto max-w-screen-xl">
-          <h1 className="font-playfair text-5xl mb-8">Portfolio</h1>
+          <h1 className="font-playfair text-5xl mb-5">Portfolio</h1>
 
           <div className="grid grid-cols-2 gap-x-12 ">
             <div className="scale-in-element">
-              <h3 className="font-playfair text-3xl mb-5 text-center">
-                Food Planner
-              </h3>
+              <h3 className="font-playfair  mb-3 text-center">Food Planner</h3>
               <p className="text-md text-gray-600 mb-3">
                 Search, find, and discover interesting recipes. Easily compose
                 your shopping list by searching for ingredients and adding them
@@ -27,7 +25,7 @@ const PortfolioSection = () => {
               </p>
             </div>
             <div className="scale-in-element">
-              <h3 className="font-playfair text-3xl  mb-5 text-center">
+              <h3 className="font-playfair  mb-3 text-center">
                 Eisenhower Matrix
               </h3>
               <p className="text-md text-gray-600 mb-3">

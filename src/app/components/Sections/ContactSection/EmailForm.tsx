@@ -38,7 +38,7 @@ export default function EmailForm() {
           </label>
 
           <textarea
-            className="w-full h-72 rounded-lg p-3 text-sm"
+            className="w-full h-48 rounded-lg p-3 text-sm"
             placeholder="Message"
             name="message"
             required
