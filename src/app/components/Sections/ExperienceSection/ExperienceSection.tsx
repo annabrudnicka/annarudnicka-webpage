@@ -67,7 +67,7 @@ const CapgeminiCard = ({ exp, index, togglePopup }: CapgeminiCardProps) => (
       alt="Capgemini icon"
       width={70}
       height={70}
-      className="object-contain mr-6"
+      className="object-contain mr-6 h-16 w-auto"
     />
     <div className="flex-1 flex flex-col justify-between h-[120px] ">
       <div>

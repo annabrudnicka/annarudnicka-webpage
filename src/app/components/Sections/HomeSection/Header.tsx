@@ -1,10 +1,11 @@
+import Image from "next/image";
 import DownloadCVButton from "./DownloadCVButton";
 import Menu from "./Menu";
 
 const Header = () => {
   return (
-    <header>
-      <div className="flex justify-between items-center py-4">
+    <header className="text-sm">
+      <div className="flex justify-between items-center py-2">
         <span className="text-left w-[276px]">+48 530 728 298</span>
         <DownloadCVButton />
         <span className="text-right w-[350px]">
@@ -12,7 +13,17 @@ const Header = () => {
         </span>
       </div>
       <span className="block h-[0.5px] w-[120vw] -ml-10 bg-zinc-300"></span>
-      <Menu />
+      <div className="flex items-center justify-between">
+        <Image
+          src="/docs/logos/AnnaAbramowiczLogo.png"
+          alt="AnnaAbramowiczLogo icon"
+          width={220}
+          height={250}
+          priority={true}
+          className="h-auto w-auto"
+        />
+        <Menu />
+      </div>
     </header>
   );
 };
