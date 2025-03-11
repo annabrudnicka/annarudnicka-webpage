@@ -18,13 +18,13 @@ const ExperienceSection = () => {
 
   return (
     <section className="h-fit w-screen bg-gradient-bg flex items-center">
-      <div className="max-w-6xl py-8 mx-auto">
+      <div className="max-w-6xl py-8 mx-4 sm:mx-auto">
         <h1 className="font-playfair text-5xl mb-5">Experience</h1>
-        <div className="grid grid-cols-2 gap-3">
+        <div className="grid sm:grid-cols-2 gap-3">
           {experiences.map((exp, index) => (
             <div
               key={index}
-              className="scale-in-element relative bg-white shadow-md h-36  rounded-xl flex flex-col justify-between"
+              className="scale-in-element relative bg-white shadow-md h-52 sm:h-36  rounded-xl flex flex-col justify-between"
             >
               {exp.company.includes("Capgemini") ? (
                 <CapgeminiCard

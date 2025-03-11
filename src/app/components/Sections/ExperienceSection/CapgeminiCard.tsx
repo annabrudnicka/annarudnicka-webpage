@@ -14,7 +14,7 @@ export const CapgeminiCard = ({
       height={70}
       className="object-contain mr-6 h-16 w-auto"
     />
-    <div className="flex-1 flex flex-col justify-between h-[120px] ">
+    <div className="flex-1 flex flex-col justify-between sm:h-[120px] ">
       <div>
         <h3 className="font-playfair text-3xl">{exp.title}</h3>
         <h4 className="text-md text-gray-600">
