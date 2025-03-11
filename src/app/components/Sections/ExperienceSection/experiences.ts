@@ -1,5 +1,3 @@
-// experiences.ts
-
 export const experiences = [
   {
     title: "Personal Development",

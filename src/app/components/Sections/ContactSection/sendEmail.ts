@@ -17,16 +17,20 @@ export const sendEmail = async (formData: FormData) => {
   });
 
   if (!validatedFields.success) {
-    return {
-      errors: validatedFields.error.flatten().fieldErrors,
-    };
+    console.error(validatedFields.error.flatten().fieldErrors);
+    return;
   }
 
   const resend = new Resend(process.env.RESEND_API_KEY);
-  await resend.emails.send({
-    from: "AAwebpage@resend.dev",
-    to: "annaabra1@gmail.com",
-    subject: validatedFields.data.title,
-    html: `<p><strong>Od:</strong> ${validatedFields.data.email}</p><p>${validatedFields.data.message}</p>`,
-  });
+
+  try {
+    await resend.emails.send({
+      from: "AAwebpage@resend.dev",
+      to: "annaabra1@gmail.com",
+      subject: validatedFields.data.title,
+      html: `<p><strong>Od:</strong> ${validatedFields.data.email}</p><p>${validatedFields.data.message}</p>`,
+    });
+  } catch (error) {
+    console.error("Email sending failed:", error);
+  }
 };

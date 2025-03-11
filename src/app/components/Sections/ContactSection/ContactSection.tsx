@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import useIntersectionObserver from "@/app/hooks/useIntersectionObserver";
 import DownloadCVButton from "../HomeSection/DownloadCVButton";
+import { contactItems } from "./contactItems";
 
 const ContactSection = () => {
   useIntersectionObserver(".scale-in-element");
@@ -20,55 +21,15 @@ const ContactSection = () => {
               cooperation, please feel free to contact me.
             </p>
 
-            <span className="flex items-center gap-5 pb-5">
-              <Image
-                src="/linkedinColor.png"
-                alt="linkedin icon"
-                width={40}
-                height={40}
-              />
-              <Link
-                href={"www.linkedin.com/in/annababramowicz"}
-                className="text-md"
-              >
-                linkedin/annaabramowicz
-              </Link>
-            </span>
+            {contactItems.map((item, index) => (
+              <span key={index} className="flex items-center gap-5 pb-5">
+                <Image src={item.src} alt={item.alt} width={40} height={40} />
+                <Link href={item.href} className="text-md">
+                  {item.title}
+                </Link>
+              </span>
+            ))}
 
-            <span className="flex items-center gap-5 pb-5">
-              <Image
-                src="/githubColor.png"
-                alt="github icon"
-                width={40}
-                height={40}
-              />
-              <Link
-                href={"https://www.github.com/annaabramowicz"}
-                className="text-md"
-              >
-                github/annaabramowicz
-              </Link>
-            </span>
-
-            <span className="flex items-center text-md gap-5 pb-5">
-              <Image
-                src="/mailColor.png"
-                alt="mail icon"
-                width={40}
-                height={40}
-              />
-              anna.b.abramowicz@gmail.com
-            </span>
-
-            <span className="flex items-center text-md gap-5 pb-5">
-              <Image
-                src="/phoneColor.png"
-                alt="phone icon"
-                width={40}
-                height={40}
-              />
-              +48 530 728 298
-            </span>
             <div className="text-md">
               <DownloadCVButton className="bg-gradient-bg mt-3 mb-8" />
             </div>
