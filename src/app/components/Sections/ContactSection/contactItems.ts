@@ -2,7 +2,7 @@ export const contactItems = [
   {
     src: "/linkedinColor.png",
     alt: "linkedin icon",
-    href: "www.linkedin.com/in/annababramowicz",
+    href: "https://www.linkedin.com/in/annababramowicz",
     title: "linkedin/annaabramowicz",
   },
   {
