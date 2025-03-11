@@ -5,7 +5,7 @@ import Menu from "./Menu";
 const Header = () => {
   return (
     <header className="text-sm">
-      <div className="flex justify-between items-center py-2">
+      <div className="hidden sm:flex justify-between items-center py-2">
         <span className="text-left w-[276px]">+48 530 728 298</span>
         <DownloadCVButton />
         <span className="text-right w-[350px]">

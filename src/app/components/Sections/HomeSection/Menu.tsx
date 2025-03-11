@@ -1,56 +1,34 @@
 "use client";
 
+import { useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
-import { Link as ScrollLink } from "react-scroll";
+import MenuItems from "./MenuItems";
 
 const Menu = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <ul className="flex justify-end items-center space-x-9 h-16">
-      <li className="hover:text-gray-500 cursor-pointer">
-        <ScrollLink to="technologies" smooth={true} duration={1000}>
-          Technologies
-        </ScrollLink>
-      </li>
+    <nav>
+      <div className="sm:hidden flex items-center">
+        <button onClick={() => setIsOpen(!isOpen)} className="p-2 h-10 w-10">
+          {isOpen ? (
+            <div className="">x</div>
+          ) : (
+            <Image src="/menu.png" alt="menu icon" width={30} height={30} />
+          )}
+        </button>
+      </div>
 
-      <li className="hover:text-gray-500 cursor-pointer">
-        <ScrollLink to="portfolio" smooth={true} duration={1000}>
-          Portfolio
-        </ScrollLink>
-      </li>
+      <div className="hidden sm:flex justify-end items-center space-x-9 h-16">
+        <MenuItems />
+      </div>
 
-      <li className="hover:text-gray-500 cursor-pointer">
-        <ScrollLink to="experience" smooth={true} duration={1000}>
-          Experience
-        </ScrollLink>
-      </li>
-
-      <li className="hover:text-gray-500 cursor-pointer">
-        <ScrollLink to="contact" smooth={true} duration={1000}>
-          Contact
-        </ScrollLink>
-      </li>
-
-      <li className="flex items-center">
-        <Link
-          href="https://www.linkedin.com/in/annababramowicz"
-          target="_blank"
-        >
-          <Image
-            src="/linkedin.png"
-            alt="LinkedIn icon"
-            width={25}
-            height={25}
-          />
-        </Link>
-      </li>
-
-      <li className="flex items-center">
-        <Link href="https://www.github.com/annaabramowicz" target="_blank">
-          <Image src="/github.png" alt="Github icon" width={30} height={30} />
-        </Link>
-      </li>
-    </ul>
+      {isOpen && (
+        <div className="absolute top-32 left-0 w-full bg-white shadow-lg z-10 sm:hidden">
+          <MenuItems onClick={() => setIsOpen(false)} />
+        </div>
+      )}
+    </nav>
   );
 };
 
