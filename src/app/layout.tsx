@@ -29,7 +29,8 @@ export default function RootLayout({
       <body
         className={`
       ${montserrat.className} 
-      ${playfair.variable}`}
+      ${playfair.variable}
+      overflow-x-hidden`}
       >
         {children}
       </body>
