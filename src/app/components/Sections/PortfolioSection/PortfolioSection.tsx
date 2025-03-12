@@ -40,12 +40,12 @@ const PortfolioSection = () => {
 
               <div className="scale-in-element">
                 <article className="overflow-hidden rounded-2xl shadow-xl border border-gray-300 sm:w-96 mx-auto">
-                  <div className="group relative h-44 rounded-2xl">
+                  <div className="group relative h-[158px] sm:h-44 rounded-2xl">
                     <Image
                       alt={project.title}
                       src={project.imageSrc}
-                      width={1000}
-                      height={1000}
+                      width={1100}
+                      height={600}
                       className="w-full object-cover"
                     />
                   </div>

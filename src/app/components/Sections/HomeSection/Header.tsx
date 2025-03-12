@@ -5,7 +5,7 @@ import Menu from "./Menu";
 const Header = () => {
   return (
     <header className="text-sm">
-      <div className="hidden sm:flex justify-between items-center py-2">
+      <div className="hidden sm:flex justify-between items-center py-3">
         <span className="text-left w-[276px]">+48 530 728 298</span>
         <DownloadCVButton />
         <span className="text-right w-[350px]">
@@ -15,7 +15,7 @@ const Header = () => {
       <span className="block h-[0.5px] w-[120vw] -ml-10 bg-zinc-300"></span>
       <div className="flex items-center justify-between">
         <Image
-          src="/docs/logos/AnnaAbramowiczLogo.png"
+          src="/logos/AnnaAbramowiczLogo.png"
           alt="AnnaAbramowiczLogo icon"
           width={220}
           height={250}
