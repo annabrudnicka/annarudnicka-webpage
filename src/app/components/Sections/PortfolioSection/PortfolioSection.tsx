@@ -55,15 +55,16 @@ const PortfolioSection = () => {
                   {project.technologies.map((tech) => (
                     <div
                       key={tech.name}
-                      className="flex items-center bg-white shadow-md rounded-md h-10 p-3 w-fit"
+                      className="inline-flex items-center bg-white shadow-md rounded-md h-10 p-3 max-w-xs"
                     >
                       {tech.src && (
                         <Image
                           src={tech.src}
                           alt={`${tech.name} icon`}
-                          width={30}
-                          height={30}
-                          className="object-contain w-full h-full mr-2"
+                          sizes="20px"
+                          width={16}
+                          height={16}
+                          className="object-contain mr-2"
                         />
                       )}
                       <span>{tech.name}</span>
