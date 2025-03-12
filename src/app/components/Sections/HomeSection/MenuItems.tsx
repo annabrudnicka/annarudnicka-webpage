@@ -1,9 +1,10 @@
 "use client";
 
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Link as ScrollLink } from "react-scroll";
-import { menuLinks, socialLinks } from "./menuItems";
+import { menuLinks, socialLinks } from "./menuItemsDetails";
 
 const MenuItems = ({ onClick }: { onClick?: () => void }) => {
   return (

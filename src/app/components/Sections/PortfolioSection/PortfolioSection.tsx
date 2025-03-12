@@ -46,7 +46,7 @@ const PortfolioSection = () => {
                       src={project.imageSrc}
                       width={1100}
                       height={600}
-                      className="w-full object-cover"
+                      className=" object-cover"
                     />
                   </div>
                 </article>

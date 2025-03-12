@@ -4,20 +4,24 @@ const useIntersectionObserver = (className: string) => {
   useEffect(() => {
     const elements = document.querySelectorAll(className);
 
-    const observer = new IntersectionObserver(
-      (entries, observer) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("animate-scale-in");
-            entry.target.classList.add("opacity-0");
-            entry.target.classList.add("scale-0");
+    const handleIntersect = (
+      entries: IntersectionObserverEntry[],
+      observer: IntersectionObserver
+    ) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("animate-scale-in");
+          entry.target.classList.add("opacity-0");
+          entry.target.classList.add("scale-0");
 
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0 }
-    );
+          observer.unobserve(entry.target);
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(handleIntersect, {
+      threshold: 0,
+    });
     elements.forEach((element) => observer.observe(element));
 
     return () => {
