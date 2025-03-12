@@ -30,9 +30,10 @@ const TechnologiesSection = () => {
                       <Image
                         src={tech.src}
                         alt={`${tech.name} icon`}
-                        width={20}
-                        height={20}
-                        className="object-contain w-full h-full mr-2"
+                        sizes="20px"
+                        width={16}
+                        height={16}
+                        className="object-contain mr-2"
                       />
                     )}
                     <span>{tech.name}</span>

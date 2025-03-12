@@ -2,7 +2,7 @@ import { PopupProps } from "@/app/types";
 
 export const Popup = ({ exp, closePopup }: PopupProps) => (
   <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50 ">
-    <div className="bg-white border rounded-lg p-3 max-w-2xl relative max-h-screen overflow-y-auto ">
+    <div className="bg-white border rounded-lg p-3 max-w-2xl relative max-h-screen overflow-y-auto mx-4">
       <button
         className="absolute h-10 w-10 right-4 text-2xl p-1"
         onClick={closePopup}
