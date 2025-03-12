@@ -20,11 +20,11 @@ const TechnologiesSection = () => {
               <h2 className="font-playfair text-2xl mb-3 border-b pb-2">
                 {category}
               </h2>
-              <div className="flex flex-wrap items-start gap-2 max-w-full">
+              <div className="flex flex-wrap items-start gap-2">
                 {items.map((tech) => (
                   <div
                     key={tech.name}
-                    className="inline-flex items-center bg-white shadow-md rounded-md h-10 p-3 mr-2 mb-2 w-auto max-w-fit"
+                    className="inline-flex items-center bg-white shadow-md rounded-md h-10 p-3 mr-2 mb-2 max-w-xs"
                   >
                     {tech.src && (
                       <Image

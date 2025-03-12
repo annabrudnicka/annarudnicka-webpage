@@ -6,6 +6,7 @@ export default {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  safelist: ["scale-in-element"],
   theme: {
     extend: {
       colors: {
@@ -20,9 +21,9 @@ export default {
         playfair: ["var(--font-playfair)"],
       },
       animation: {
-        "scale-in": "scaleIn 3s ease-out forwards",
-        "left-animation": "slideInLeft 3s ease-out forwards",
-        "right-animation": "slideInRight 3s ease-out forwards",
+        "scale-in": "scaleIn 2s ease-out forwards",
+        "left-animation": "slideInLeft 2s ease-out forwards",
+        "right-animation": "slideInRight 2s ease-out forwards",
       },
       keyframes: {
         scaleIn: {
