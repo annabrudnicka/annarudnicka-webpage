@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${montserrat.className}${playfair.variable} overflow-x-hidden`}
+        className={`${montserrat.className} ${playfair.variable} overflow-x-hidden`}
       >
         {children}
       </body>
