@@ -34,7 +34,7 @@ export const portfolioProjects = [
     description:
       "Manage your tasks effectively by categorizing them based on urgency and importance. The Eisenhower Matrix helps you prioritize your daily responsibilities with a simple interface.",
     imageSrc: "/eisenhowerMatrixImage.png",
-    demoLink: "https://food-planner-2024.vercel.app",
+    demoLink: "https://eisenhower-matrix-steel.vercel.app",
     codeLink: "https://github.com/annaabramowicz/eisenhower-matrix",
     technologies: portfolioTechnologies.EisenhowerMatrix,
   },
