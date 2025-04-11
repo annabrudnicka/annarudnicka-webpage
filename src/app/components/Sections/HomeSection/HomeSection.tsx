@@ -10,7 +10,7 @@ const HomeSection = () => {
           <div className="font-playfair text-3xl sm:text-5xl animate-right-animation flex flex-col items-end sm:items-start sm:justify-center mr-7 sm:w-fit  space-y-4 sm:space-y-8 ">
             <span className="text-gray-500 ">Hi, I&apos;m</span>
             <span className="font-bold">Anna Abramowicz</span>
-            <span>Front-End Developer</span>
+            <span>Software Developer</span>
           </div>
           <div className="animate-left-animation">
             <Image
