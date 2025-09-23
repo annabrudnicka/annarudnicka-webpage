@@ -8,9 +8,7 @@ const Header = () => {
       <div className="hidden sm:flex justify-between items-center py-3">
         <span className="text-left w-[276px]">+48 530 728 298</span>
         <DownloadCVButton />
-        <span className="text-right w-[350px]">
-          anna.b.abramowicz@gmail.com
-        </span>
+        <span className="text-right w-[350px]">anna.beata.rudnicka@gmail.com</span>
       </div>
       <span className="block h-[0.5px] w-[120vw] -ml-10 bg-zinc-300"></span>
       <div className="flex items-center justify-between">

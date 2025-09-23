@@ -7,14 +7,14 @@ export const menuLinks = [
 
 export const socialLinks = [
   {
-    href: "https://www.linkedin.com/in/annababramowicz",
+    href: "https://www.linkedin.com/in/annarudnicka",
     src: "/linkedin.png",
     alt: "LinkedIn icon",
     width: 25,
     height: 25,
   },
   {
-    href: "https://www.github.com/annaabramowicz",
+    href: "https://www.github.com/annabrudnicka",
     src: "/github.png",
     alt: "Github icon",
     width: 30,

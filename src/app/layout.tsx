@@ -15,7 +15,7 @@ const playfair = Playfair({
 });
 
 export const metadata: Metadata = {
-  title: "Anna Abramowicz",
+  title: "Anna Rudnicka",
   description: "Welcome to my webpage",
 };
 

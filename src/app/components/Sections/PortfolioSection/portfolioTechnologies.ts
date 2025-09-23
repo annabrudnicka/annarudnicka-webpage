@@ -26,7 +26,7 @@ export const portfolioProjects = [
       "Search, find, and discover interesting recipes. Easily compose your shopping list by searching for ingredients and adding them to your fridge. Data is fetched from an external API and prepared accordingly.",
     imageSrc: "/foodPlannerImage.png",
     demoLink: "https://food-planner-2024.vercel.app",
-    codeLink: "https://github.com/annaabramowicz/food-planner-2024",
+    codeLink: "https://github.com/annabrudnicka/food-planner-2024",
     technologies: portfolioTechnologies.FoodPlanner,
   },
   {
@@ -35,7 +35,7 @@ export const portfolioProjects = [
       "Manage your tasks effectively by categorizing them based on urgency and importance. The Eisenhower Matrix helps you prioritize your daily responsibilities with a simple interface.",
     imageSrc: "/eisenhowerMatrixImage.png",
     demoLink: "https://eisenhower-matrix-steel.vercel.app",
-    codeLink: "https://github.com/annaabramowicz/eisenhower-matrix",
+    codeLink: "https://github.com/annabrudnicka/eisenhower-matrix",
     technologies: portfolioTechnologies.EisenhowerMatrix,
   },
 ];

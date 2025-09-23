@@ -2,20 +2,20 @@ export const contactItems = [
   {
     src: "/linkedinColor.png",
     alt: "linkedin icon",
-    href: "https://www.linkedin.com/in/annababramowicz",
-    title: "linkedin/annaabramowicz",
+    href: "https://www.linkedin.com/in/annarudnicka",
+    title: "linkedin/annarudnicka",
   },
   {
     src: "/githubColor.png",
     alt: "github icon",
-    href: "https://www.github.com/annaabramowicz",
-    title: "github/annaabramowicz",
+    href: "https://www.github.com/annabrudnicka",
+    title: "github/annabrudnicka",
   },
   {
     src: "/mailColor.png",
     alt: "mail icon",
-    href: "mailto:anna.b.abramowicz@gmail.com",
-    title: " anna.b.abramowicz@gmail.com",
+    href: "mailto:anna.beata.rudnicka@gmail.com",
+    title: "anna.beata.rudnicka@gmail.com",
   },
   {
     src: "/phoneColor.png",
