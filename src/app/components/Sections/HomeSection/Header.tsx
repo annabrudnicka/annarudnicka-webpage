@@ -13,8 +13,8 @@ const Header = () => {
       <span className="block h-[0.5px] w-[120vw] -ml-10 bg-zinc-300"></span>
       <div className="flex items-center justify-between">
         <Image
-          src="/logos/AnnaAbramowiczLogo.png"
-          alt="AnnaAbramowiczLogo icon"
+          src="/logos/AnnaRudnickaLogo.png"
+          alt="AnnaRudnickaLogo icon"
           width={220}
           height={250}
           priority={true}
